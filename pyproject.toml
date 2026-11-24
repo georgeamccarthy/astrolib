@@ -1,0 +1,10 @@
+[project]
+name = "astrolib"
+version = "0.1.0"
+description = "Ingest public astronomical catalogues into a local database"
+requires-python = ">=3.11"
+dependencies = ["pyvo>=1.5", "astropy>=6.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
