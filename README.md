@@ -2,6 +2,14 @@
 
 Ingest public astronomical catalogues into a local SQLite database.
 
+## Exoplanets
+
+```
+uv run python -m astrolib.ingest.exoplanets
+```
+
+Copies the NASA Exoplanet Archive confirmed-planet table (`exo_planets`, from pscomppars) and the TESS Objects of Interest list (`exo_toi`) into `data/astrolib.db`, with all columns. The view `tess_planets` holds confirmed planets discovered by TESS.
+
 ## Gamma-ray bursts
 
 ```
